@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/TOOLS/Automation/cucumber-java-6.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/TOOLS/Automation/cucumber-junit-6.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/TOOLS/Automation/junit-jupiter-api-5.8.1.jar"/>
+	<classpathentry kind="lib" path="D:/TOOLS/Automation/selenium-java-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/charsets.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/deploy.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/javaws.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/jce.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/jfr.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/jfxswt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/management-agent.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/resources.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_20/lib/rt.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
