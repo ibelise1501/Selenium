@@ -27,19 +27,19 @@ public List<WebElement> findElements(By locator) {
 	return driver.findElements(locator);
 }
 
-public String getText(WebElement element) {
+public String getTextElement(WebElement element) {
 	return element.getText();
 }
 
-public String getText(By locator) {
+public String getTextByLocator(By locator) {
 	return driver.findElement(locator).getText();
 }
 
-public void type(String inputText, By locator) {
+public void sendKeys(String inputText, By locator) {
 	driver.findElement(locator).sendKeys(inputText);
 }
 
-public void sendKeys(By locator) {
+public void sendKeysByLocatorClick(By locator) {
 	driver.findElement(locator).click();
 }
 
@@ -54,7 +54,6 @@ public boolean isDisplayed(By locator) {
 public void get(String url) {
 	driver.get(url);
 }
-
 
 
 }
