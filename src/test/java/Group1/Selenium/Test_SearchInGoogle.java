@@ -15,7 +15,7 @@ public class Test_SearchInGoogle {
 	public void setUp() throws Exception {
 		googlePage = new GooglePage(driver);
 		driver = googlePage.Connection();
-		googlePage.get("https://google.com");
+		googlePage.navigate("https://google.com");
 		Thread.sleep(2000);
 	}
 
@@ -28,7 +28,6 @@ public class Test_SearchInGoogle {
 	public void test() {
 		googlePage.setCriteria(criteriaToSearch);
 		googlePage.clickSearchButton();
-		// Thread.sleep(2000);
 		googlePage.checkResults(criteriaToSearch);
 		String link = googlePage.visitFirstLink();
 		firstElement = new FirstElement(driver);
