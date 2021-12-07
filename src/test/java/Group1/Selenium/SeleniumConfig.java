@@ -39,7 +39,7 @@ public void sendKeys(String inputText, By locator) {
 	driver.findElement(locator).sendKeys(inputText);
 }
 
-public void sendKeysByLocatorClick(By locator) {
+public void Click(By locator) {
 	driver.findElement(locator).click();
 }
 
@@ -51,8 +51,12 @@ public boolean isDisplayed(By locator) {
 	}
 }
 
-public void get(String url) {
+public void navigate(String url) {
 	driver.get(url);
+}
+
+public String getCurrentURL() {
+	return driver.getCurrentUrl();
 }
 
 

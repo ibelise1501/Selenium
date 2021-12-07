@@ -20,13 +20,13 @@ public class GooglePage extends SeleniumConfig {
 
 	// Para pasar el criterio al campo Search
 	public void setCriteria(String criteriaToSearch) {
-		driver.findElement(criteria).sendKeys(criteriaToSearch);
+		sendKeys(criteriaToSearch, criteria);
 
 	}
 
 	// Para hacer click en el boton Search
 	public void clickSearchButton() {
-		driver.findElement(searchBtn).click();
+		Click(searchBtn);
 	}
 
 	/*
@@ -34,7 +34,7 @@ public class GooglePage extends SeleniumConfig {
 	 */
 	public void checkResults(String criteriaToSearch) {
 		try {
-			List<WebElement> auxlinkList = driver.findElements(By.tagName("a"));
+			List<WebElement> auxlinkList = findElements(By.tagName("a"));
 			linkList = new ArrayList<WebElement>();
 			for (WebElement webElement : auxlinkList) {
 				if (webElement.getAttribute("href") != null
@@ -57,8 +57,7 @@ public class GooglePage extends SeleniumConfig {
 		if (linkList.size() > 0) {
 			link = linkList.get(0).getAttribute("href");
 			System.out.println(linkList.get(0).getText());
-			// System.out.println(link);
-			driver.get(link);
+			navigate(link);
 		}
 		return link.toString();
 	}
